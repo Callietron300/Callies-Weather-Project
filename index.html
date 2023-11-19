@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Callies Weather App</title>
+  </head>
+  <body>
+    <section class="header">
+      <form class="form" id="searchCity">
+        <input
+          type="text"
+          name="search"
+          id="search-text-input"
+          placeholder="Search your city..."
+          class="form-input"
+        />
+        <input type="submit" value="submit" class="form-submit" />
+      </form>
+      <img src="" alt="" id="weather-icon" />
+      <card class="weather-card">
+        <h1 id="city">New York</h1>
+        <h3 id="date-time">00:00 DD MMM YY</h3>
+        <h2 class="temp">
+          <span id="temp">23</span><span id="metric">°C</span>
+        </h2>
+        <div class="condition-box">
+          <img src="" alt="" id="condition-icon" />
+          <h5 id="condition">Sunny</h5>
+        </div>
+        <div class="stats-container">
+          <h3>
+            <img src="img/sunrise.png" alt="sunrise" class="icon" /><span
+              >00:00</span
+            >
+          </h3>
+          <h3>
+            <img src="img/wind.png" alt="sunrise" class="icon" /><span id="wind"
+              >00</span
+            >mph
+          </h3>
+          <h3>
+            <img src="img/sunset.png" alt="sunrise" class="icon" /><span
+              >00:00</span
+            >
+          </h3>
+        </div>
+      </card>
+    </section>
+    <p>
+      This project was coded by Callie 😎 and is
+      <a
+        href="https://github.com/Callietron300/She-Codes-Weather-Project"
+        target="_blank"
+      >
+        on GitHub</a
+      >
+      and
+      <a href="https://thriving-longma-e728b7.netlify.app" target="_blank"
+        >hosted on Netlify</a
+      >
+      Icons created by
+      <a href="https://www.flaticon.com/free-icons/sunset" title="sunset icons"
+        >Icon Hubs - Flaticon</a
+      >
+    </p>
+    <script src="/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

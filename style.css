@@ -1,0 +1,107 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.header {
+  background: #8ecae6;
+  color: whitesmoke;
+  padding: 10px 10px 40px 10px;
+}
+
+.form-input {
+  width: 250px;
+  padding: 3px 15px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: whitesmoke;
+}
+
+.form-submit {
+  padding: 3px 15px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: whitesmoke;
+  border: 2.5px solid whitesmoke;
+  border-radius: 20px;
+  outline: none;
+}
+
+.form-submit:hover {
+  background-color: whitesmoke;
+  color: #8ecae6;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+#temp {
+  font-size: 140px;
+}
+
+#metric {
+  font-size: 40px;
+  vertical-align: top;
+}
+
+.condition-box {
+  background: whitesmoke;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  color: #8ecae6;
+  padding: 2px 15px 2px 10px;
+  align-items: center;
+  border-radius: 35px;
+}
+
+#condition-icon {
+  width: 50px;
+}
+
+.stats-container {
+  display: flex;
+  margin: 20px auto;
+  min-width: 450px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  padding: 0px 3px;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
