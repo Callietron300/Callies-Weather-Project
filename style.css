@@ -9,7 +9,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1;
@@ -104,4 +105,35 @@ h1 {
   padding: 0px 3px;
   -webkit-filter: grayscale(1) invert(1);
   filter: grayscale(1) invert(1);
+}
+
+.forecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.forecast-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #8ecae6;
+  color: whitesmoke;
+  margin: 15px 10px;
+  padding: 20px 10px;
+  min-width: 120px;
+  min-height: 150px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.forecast-card:hover {
+  transform: scale(105%);
+}
+
+.forecast_condition-icon {
+  width: 70px;
+  height: 70px;
 }
