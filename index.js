@@ -1,30 +1,36 @@
 //Update Date
-const dateTimeText = document.querySelector("#date-time");
+function UpdateDate() {
+  let dateTimeText = document.querySelector("#date-time");
 
-const now = new Date();
-const min = now.getMinutes();
-const hour = now.getHours();
-const day = now.getDate();
+  const now = new Date();
+  const min = now.getMinutes();
+  const hour = now.getHours();
+  const day = now.getDate();
 
-const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-const month = months[now.getMonth()];
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  const month = months[now.getMonth()];
 
-const year = now.getFullYear();
+  const year = now.getFullYear();
 
-dateTimeText.innerHTML = `${hour}:${min} ${day} ${month} ${year}`;
+  dateTimeText.innerHTML = `${hour}:${min} ${month} ${day} ${year}`;
+}
+
+UpdateDate();
+
+setInterval(UpdateDate, 60000);
 
 //DOM Vars
 const cityElement = document.querySelector("#city");
