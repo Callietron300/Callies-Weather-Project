@@ -1,6 +1,6 @@
 //Update Date
 function UpdateDate() {
-  const dateTimeText = document.querySelector("#date-time");
+  let dateTimeText = document.querySelector("#date-time");
 
   const now = new Date();
   const min = now.getMinutes();
@@ -25,7 +25,7 @@ function UpdateDate() {
 
   const year = now.getFullYear();
 
-  dateTimeText.innerHTML = `${hour}:${min} ${day} ${month} ${year}`;
+  dateTimeText.innerHTML = `${hour}:${min} ${month} ${day} ${year}`;
 }
 
 UpdateDate();
