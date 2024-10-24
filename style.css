@@ -24,13 +24,13 @@ body {
 .header {
   background: #8ecae6;
   color: whitesmoke;
-  padding: 10px 10px 40px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .form-input {
   width: 250px;
   padding: 3px 15px;
-  margin-right: 10px;
+  margin-right: 5px;
   box-sizing: border-box;
   background-color: transparent;
   color: whitesmoke;
@@ -95,9 +95,18 @@ h1 {
 .stats-container {
   display: flex;
   margin: 20px auto;
-  min-width: 450px;
+  width: fit-content;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 460px) {
+  .stats-container {
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 0.5rem;
+  }
 }
 
 .icon {
@@ -112,6 +121,13 @@ h1 {
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 724px) {
+  .forecast {
+    justify-content: flex-start;
+  }
 }
 
 .forecast-card {
@@ -136,4 +152,11 @@ h1 {
 .forecast_condition-icon {
   width: 70px;
   height: 70px;
+}
+
+.id {
+  text-align: center;
+  max-width: 40rem;
+  margin: auto;
+  padding: 2rem;
 }
